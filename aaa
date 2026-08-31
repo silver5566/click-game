@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu jogo</title>
+
+    <style>
+        body {
+            text-align: center;
+            background: #222;
+            color: white;
+            font-family: Arial;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Meu primeiro jogo</h1>
+
+    <p id="pontos">Pontos: 0</p>
+
+    <button onclick="ganharPonto()">GANHAR PONTO</button>
+
+    <script>
+        let pontos = 0;
+
+        function ganharPonto() {
+            pontos++;
+            document.getElementById("pontos").textContent =
+                "Pontos: " + pontos;
+        }
+    </script>
+
+</body>
+</html>
